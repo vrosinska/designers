@@ -35,22 +35,30 @@ const devConfig = () => ({
   module: {
     rules: [
       {
-        test: /\.(s*)css$/,
+        test: /\.scss$/,
         use: [
-          'style-loader', 
+          'style-loader',
           {
             loader: 'css-loader',
             query: {
-              modules: true, 
+              modules: true,
               localIdentName: '[name]_[local]_[hash:base64:5]',
             },
-          }, 
+          },
           'sass-loader',
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
         ],
       },
     ],
   },
 });
+
 
 const prodConfig = () => ({
   module: {

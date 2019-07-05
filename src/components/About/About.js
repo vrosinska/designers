@@ -1,6 +1,6 @@
 import React from 'react';
 import {aboutUs} from "../../data/datastore";
-import styles from "../About/About.scss";
+import styles from "./About.scss";
 import ReactHtmlParser from 'react-html-parser';
 import classnames from 'classnames';
 
@@ -11,7 +11,8 @@ class About extends React.Component {
         return (
             <div className="container">
                 <div className={styles.aboutUs}>
-                    <a id="about" className={styles.about}/>
+                    <a id="about"/>
+
                     {aboutUs.map((aboutPerson, index) => {
                         return (
                             <div className="row mb-4 pb-4">
