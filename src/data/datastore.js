@@ -16,39 +16,42 @@ export const homeCarousel = [
         buttonText: 'Learn more <b>About us</b>',
         image: '../../../public/images/about.jpg',
         href: '#about',
-        buttonClassName: 'btn btn-light',
+        buttonVariant: 'light',
     },
     {
         buttonText: 'Dig into our <b>Offer</b>',
         image: '../../../public/images/offer.jpg',
         href: '#offer',
-        buttonClassName: 'btn btn-dark',
+        buttonVariant: 'dark',
     },
     {
         buttonText: 'Look all over our <b>Portfolio</b>',
         image: '../../../public/images/portfolio.jpg',
         href: '#portfolio',
-        buttonClassName: 'btn btn-light',
+        buttonVariant: 'light',
     },
     {
         buttonText: 'Get in touch and <b>Contact</b> us',
         image: '../../../public/images/contact.jpg',
         href: '#contact',
-        buttonClassName: 'btn btn-light',
+        buttonVariant: 'light',
     },
 ];
 export const offer = [
     {
         headline: 'Interior design for individuals',
-        description: 'Life is too short to live in a place that does not satisfy your needs. We will professionally transform your dated kitchen or bathroom, garage or entire home. We will create a unique interior space for you in your newly built house. From conceptual 3D designs to detailed technical projects, <b>STYLISH </b> will make sure you live in a space that makes you happy.',
+        description: 'Life is too short to live in a place that does not satisfy your needs. We will professionally transform your dated kitchen, bathroom, garage or entire home. We will create a unique interior space for you in your newly built house. From conceptual 3D designs to detailed technical projects, <b>STYLISH </b> will make sure you live in a space that makes you happy.',
+        background: '../../../public/images/offer-int.jpg',
     },
     {
         headline: 'Exterior design for individuals',
         description: 'Feeling the need for re-painting your house? Thinking about a fancy garden or fence? Your driveway and alcove are still waiting for some better times? <b>STYLISH </b> can comprehensively take care of your exterior including ponds, pools, outdoor saunas or fireplace, terraces & balconies.',
+        background: '../../../public/images/offer-ext.jpg',
     },
     {
         headline: 'Commercial space design',
         description: 'From air-conditioned office space in the city center to fancy hotels or hippie restaurants at the suburbs, we create comfortable and functional places for work and rest. <b>STYLISH</b> will make your internal and external space exceptional and unique - the one that no one would like to forget.',
+        background: '../../../public/images/offer-comm.jpg',
     }
 ];
 export const portfolio = [
@@ -219,3 +222,10 @@ export const portfolio = [
         thumbnail: '../../../public/images/S-wardrobe1.jpg',
     },
 ]
+export const contact =
+    {
+        address: '50-101 Wroclaw, Plac Solny 20',
+        phone: '+48 123 456 789',
+        email: 'designers@designers.com.pl',
+        mapImage: '../../../public/images/mapImage.jpg',
+    }

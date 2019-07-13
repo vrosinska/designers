@@ -1,0 +1,29 @@
+.card-header
+img {
+    width: 18vw;
+    height: 18vh;
+    object-fit: cover;
+    float: right;
+    mask-image: linear-gradient(-65deg,
+    rgba(0,0,0,1) 20%, rgba(0,0,0,0) 80%);
+}
+
+.card-header {
+    -webkit-align-items: flex-end;
+    align-items: end;
+    padding: 0;
+    border: 3px solid #343a40;
+}
+.accordion .card .card-header {
+    margin-bottom: 0;
+}
+.card-header .btn-link {
+    color: #343a40;
+    height: 18vh;
+    padding: 17px;
+}
+@media (max-width: 400px ) {
+    .card-header img {
+        display: none;
+    }
+}

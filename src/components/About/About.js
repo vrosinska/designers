@@ -20,7 +20,7 @@ class About extends React.Component {
                                     index % 2 === 0 ? "" : "order-md-2")}>
                                     <img
                                         className={styles.aboutPhoto}
-                                        src={aboutPerson.image}
+                                        src={process.env.PUBLIC_URL + aboutPerson.image}
                                         alt=""
                                     />
                                 </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Home.scss'
 import {homeCarousel} from "../../data/datastore";
 import ReactHtmlParser from "react-html-parser";
-
+import Button from 'react-bootstrap/Button'
 
 class Home extends React.Component {
 
@@ -21,8 +21,8 @@ class Home extends React.Component {
                                     alt=""
                                 />
                                 <Carousel.Caption>
-                                    <a className={homeCarouselItem.buttonClassName}
-                                       href={homeCarouselItem.href}>{ReactHtmlParser(homeCarouselItem.buttonText)}</a>
+                                    <Button variant={homeCarouselItem.buttonVariant}
+                                       href={homeCarouselItem.href}>{ReactHtmlParser(homeCarouselItem.buttonText)}</Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         )

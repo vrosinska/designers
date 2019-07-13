@@ -1,6 +1,7 @@
 .carousel.carousel-slider {
     max-height: 70vh;
     min-height: 50vh;
+    display: -webkit-flex;
     display: flex;
     margin-top: 55px;
 }
