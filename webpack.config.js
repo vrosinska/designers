@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -63,7 +64,6 @@ const devConfig = () => ({
 const prodConfig = () => ({
     module: {
         rules: [
-            { test: /\.(jpe?g|gif|png|svg|woff|ttf|wav|mp3)$/, loader: "file" },
             {
                 test: /\.scss$/,
                 use: [
@@ -92,6 +92,12 @@ const prodConfig = () => ({
             filename: 'styles_bundle_[name].css',
             chunkFilename: '[id].css',
         }),
+        new CopyWebpackPlugin([
+            {
+                from: './public',
+                to: 'public',
+            }
+        ]),
     ],
 });
 
