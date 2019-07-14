@@ -15,14 +15,14 @@ class Contact extends React.Component {
                 <div className={styles.contact}>
                     <a id="contact"/>
                     <div className="row mb-4 pb-4 mr-0 ml-0">
-                        <div className={classnames("col-lg-6 col-sm-12 col-10 offset-sm-0")}>
+                        <div className={classnames("col-md-6 col-sm-12 col-12 offset-sm-0")}>
                             <h2> CONTACT US </h2>
                             <p><FontAwesomeIcon className={styles.icons} icon={faMapMarkerAlt}
-                                                style={{color: 'black'}}/>{ReactHtmlParser(contact.address)}</p>
+                                                style={{color: '#343a40'}}/>{ReactHtmlParser(contact.address)}</p>
                             <p><FontAwesomeIcon className={styles.icons} icon={faPhoneAlt}
-                                                style={{color: 'black'}}/>{ReactHtmlParser(contact.phone)}</p>
+                                                style={{color: '#343a40'}}/>{ReactHtmlParser(contact.phone)}</p>
                             <p><FontAwesomeIcon className={styles.icons} icon={faAt}
-                                                style={{color: 'black'}}/>{ReactHtmlParser(contact.email)}</p>
+                                                style={{color: '#343a40'}}/>{ReactHtmlParser(contact.email)}</p>
                         </div>
 
                     </div>
@@ -30,7 +30,7 @@ class Contact extends React.Component {
 
                     {/*FORM*/}
                     <div className="row mb-4 pb-4 mr-0 ml-0">
-                        <form className={styles.contactForm}>
+                        <form className={styles.contactForm} action="https://formspree.io/19456w@gmail.com" method="POST">
                             <div className="row">
                             <div className="col-md-6 col-sm-12">
                             <p><input name="name" placeholder="Your name" required type="text"/></p>
@@ -39,9 +39,9 @@ class Contact extends React.Component {
                             <p><input name="city" placeholder="Your city" type="text"/></p>
                             </div>
                             <div className="col-md-6 col-sm-12">
-                            <p><textarea rows="7" cols="50" placeholder="Type your message here" required/>
+                            <p><textarea name="text" rows="7" cols="50" placeholder="Type your message here" required/>
                             </p>
-                            <Button className={styles.contactButton} variant="dark" type="submit">
+                            <Button className={styles.contactButton} variant="dark" type="submit" value="SEND">
                                 <span>Submit</span></Button>
                             </div>
                             </div>

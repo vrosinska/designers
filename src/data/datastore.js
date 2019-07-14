@@ -143,7 +143,7 @@ export const portfolio = [
     },
     {
         original: '../../../public/images/B-kitchen-living1.jpg',
-        description: 'Refurbished kitchen with a living room in the suburbs',
+        description: 'Refurbished kitchen with a living room',
         thumbnail: '../../../public/images/S-kitchen-living1.jpg',
     },
     {

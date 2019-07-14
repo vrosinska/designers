@@ -3,8 +3,11 @@
 .contact {
   max-width: 85vw;
   margin-top: 65px;
-  position: absolute;
+  position: fixed;
   top: 5%;
+  left:10%;
+  color: $color-main;
+
   }
 
 .icons {
