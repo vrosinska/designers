@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className={styles.portfolioContainer}>
                 <Carousel showArrows={true} showThumbs={true} dynamicHeight={true} showIndicators={false} useKeyboardArrows={true} infiniteLoop={true}>
                     {portfolio.map((portfolioItem, index) => {
                         return (

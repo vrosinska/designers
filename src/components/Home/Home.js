@@ -9,7 +9,7 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="mb-2">
+            <div className={styles.homeContainer}>
                 <a id="home"/>
                 <Carousel>
                     {homeCarousel.map((homeCarouselItem, index) => {

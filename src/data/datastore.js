@@ -226,6 +226,6 @@ export const contact =
     {
         address: '50-101 Wroclaw, Plac Solny 20',
         phone: '+48 123 456 789',
-        email: 'designers@designers.com.pl',
+        email: 'stylish@designers.com.pl',
         mapImage: '../../../public/images/mapImage.jpg',
     }

@@ -2,13 +2,13 @@
 
 .contact {
   max-width: 85vw;
-  margin-top: 65px;
-  position: fixed;
+  margin-top: 56px;
+  position: absolute;
   top: 5%;
-  left:10%;
+  left: 10%;
   color: $color-main;
-
-  }
+  margin-bottom: 30px;
+}
 
 .icons {
   margin-right: 10px;
@@ -19,14 +19,16 @@
 }
 
 .contactForm {
-  width:80vw;
-    input, textarea{
+  width: 80vw;
+
+  input, textarea {
     border: none;
-        color: $color-main;
+    color: $color-main;
     width: 100%;
     border-bottom: 5px solid $color-main;
     box-shadow: none;
   }
+
   ::placeholder {
     color: $color-main;
   }

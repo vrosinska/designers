@@ -1,5 +1,11 @@
 .CarouselContainer {
   height: 95vh;
   object-fit: cover;
-  width: 100%;
+  @media (max-height: 420px) {
+    height: 92vh;
+  }
+}
+
+.homeContainer {
+  margin-bottom: 24px;
 }

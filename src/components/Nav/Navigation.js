@@ -10,6 +10,13 @@ function Navigation() {
     return (
         <Navbar collapseOnSelect className="fixed-top" bg="dark" variant="dark" expand="lg">
             <Navbar.Brand className={styles.logo} href="#home">STYLISH</Navbar.Brand>
+            <ul className="navbar-nav ml-auto flex-row">
+                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faFacebookF} style={{color: '#4968ad'}}/></a>
+                </li>
+                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faInstagram} style={{color: 'white'}}/></a></li>
+                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faTwitter} style={{color: '#49a1eb'}}/></a></li>
+                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faYoutube} style={{color: '#eb3223'}}/></a></li>
+            </ul>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -20,13 +27,7 @@ function Navigation() {
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-            <ul className="navbar-nav ml-auto flex-row">
-                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faFacebookF} style={{color: '#4968ad'}}/></a>
-                </li>
-                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faInstagram} style={{color: 'white'}}/></a></li>
-                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faTwitter} style={{color: '#49a1eb'}}/></a></li>
-                <li className="mx-1"><a href="#"><FontAwesomeIcon icon={faYoutube} style={{color: '#eb3223'}}/></a></li>
-            </ul>
+
         </Navbar>
     )
 }

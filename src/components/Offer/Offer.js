@@ -13,11 +13,12 @@ class Offer extends React.Component {
 
     render() {
         return (
-            <div className="container">
+
                 <div className={styles.offerContainer}>
-                    <Accordion className="pb-5">
+                    <Accordion className="py-3">
                         <a id="offer"/>
-                        {offer.map((offerItem, index) => {
+                        <div className={styles.cards}>
+                            {offer.map((offerItem, index) => {
                                 return (
                                     <Card key={index}>
                                         <Card.Header>
@@ -33,10 +34,10 @@ class Offer extends React.Component {
                                     </Card>)
                             }
                         )}
-
+                        </div>
                     </Accordion>
                 </div>
-            </div>
+
         )
     }
 }

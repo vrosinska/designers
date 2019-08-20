@@ -15,7 +15,7 @@ class About extends React.Component {
 
                     {aboutUs.map((aboutPerson, index) => {
                         return (
-                            <div className="row mb-4 pb-4">
+                            <div className="row mb-4 pb-4" key={index}>
                                 <div className={classnames("col-md-3 col-sm-12 col-10 offset-1 offset-sm-0",
                                     index % 2 === 0 ? "" : "order-md-2")}>
                                     <img
